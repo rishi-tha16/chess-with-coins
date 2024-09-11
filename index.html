@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard with Coins</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .white {
+            background-color: #f0d9b5;
+        }
+        .black {
+            background-color: #b58863;
+        }
+        /* Chess pieces using Unicode characters */
+        .white-piece {
+            color: white;
+        }
+        .black-piece {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- First row for black side -->
+        <tr>
+            <td class="white">&#9820;</td> <!-- Rook -->
+            <td class="black">&#9822;</td> <!-- Knight -->
+            <td class="white">&#9821;</td> <!-- Bishop -->
+            <td class="black">&#9819;</td> <!-- Queen -->
+            <td class="white">&#9818;</td> <!-- King -->
+            <td class="black">&#9821;</td> <!-- Bishop -->
+            <td class="white">&#9822;</td> <!-- Knight -->
+            <td class="black">&#9820;</td> <!-- Rook -->
+        </tr>
+        <!-- Second row for black pawns -->
+        <tr>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+        </tr>
+        <!-- Empty rows -->
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <!-- Seventh row for white pawns -->
+        <tr>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+        </tr>
+        <!-- Eighth row for white side -->
+        <tr>
+            <td class="black">&#9814;</td> <!-- Rook -->
+            <td class="white">&#9816;</td> <!-- Knight -->
+            <td class="black">&#9815;</td> <!-- Bishop -->
+            <td class="white">&#9813;</td> <!-- Queen -->
+            <td class="black">&#9812;</td> <!-- King -->
+            <td class="white">&#9815;</td> <!-- Bishop -->
+            <td class="black">&#9816;</td> <!-- Knight -->
+            <td class="white">&#9814;</td> <!-- Rook -->
+        </tr>
+    </table>
+</body>
+</html>
